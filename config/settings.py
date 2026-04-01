@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
     # user_apps
     'users',
+    'sections',
 ]
 
 MIDDLEWARE = [
@@ -92,10 +93,33 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+# Local Database MSSQLExpress
+USER = os.getenv('MS_SQL_USER')
+PASSWORD = os.getenv('MS_SQL_KEY')
+HOST = os.getenv('MS_SQL_SERVER')
+DATABASE = os.getenv('MS_SQL_DATABASE')
+PAD_DATABASE = os.getenv('MS_SQL_PAD_DATABASE')
+DRIVER = os.getenv('MS_SQL_DRIVER')
+
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mssql',
+        'NAME': DATABASE,
+        'USER': USER,
+        'PASSWORD': PASSWORD,
+        'HOST': HOST,
+        'PORT': '',
+        'OPTIONS': {
+            'driver': DRIVER,
+        }
     }
 }
 
