@@ -2,10 +2,10 @@ from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView,
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
-from sections.models import Section
+from sections.models import Section, Content
 from sections.permissions import IsModerator, IsSuperuser
 from sections.serializers.section_serializers import SectionSerializer, SectionListSerializer
-from sections.serializers.content_serializers import ContentSerializer, ContentSectionSerializer, ContentSectionListSerializer
+from sections.serializers.content_serializers import ContentSerializer, ContentListSerializer
 from sections.paginators import SectionPagination, ContentPagination
 
 
@@ -36,4 +36,34 @@ class SectionUpdateAPIView(UpdateAPIView):
 class SectionDestroyAPIView(DestroyAPIView):
     serializer_class = SectionSerializer
     queryset = Section.objects.all()
+    # permission_classes = (IsAuthenticated, IsSuperuser)
+
+
+class ContentListAPIView(ListAPIView):
+    serializer_class = ContentListSerializer
+    queryset = Content.objects.all()
+    # permission_classes = (IsAuthenticated,)
+    pagination_class = ContentPagination
+
+
+class ContentCreateAPIView(CreateAPIView):
+    serializer_class = ContentSerializer
+    # permission_classes = (IsAuthenticated, IsModerator | IsSuperuser)
+
+
+class ContentRetrieveAPIView(RetrieveAPIView):
+    serializer_class = ContentSerializer
+    queryset = Content.objects.all()
+    # permission_classes = (IsAuthenticated,)
+
+
+class ContentUpdateAPIView(UpdateAPIView):
+    serializer_class = ContentSerializer
+    queryset = Content.objects.all()
+    # permission_classes = (IsAuthenticated, IsModerator | IsSuperuser)
+
+
+class ContentDestroyAPIView(DestroyAPIView):
+    serializer_class = ContentSerializer
+    queryset = Content.objects.all()
     # permission_classes = (IsAuthenticated, IsSuperuser)
