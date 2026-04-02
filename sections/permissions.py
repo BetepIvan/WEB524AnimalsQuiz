@@ -1,0 +1,23 @@
+from django.utils.translation import gettext_lazy as _
+
+from rest_framework.permissions import BasePermission
+
+from users.models import UserRolrs
+
+
+class IsModerator(BasePermission):
+    message = _('Вы не moderator')
+
+    def has_permission(self, request, view):
+        if request.user.is_authenticated and request.user.role == UserRolrs.MODERATOR:
+            return True
+        return False
+
+
+class IsSuperuser(BasePermission):
+    message = _('Вы не superuser')
+
+    def has_permission(self, request, view):
+        if request.user.is_authenticated and request.user.is_superuser:
+            return True
+        return False
