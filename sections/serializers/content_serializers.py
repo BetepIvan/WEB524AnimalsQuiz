@@ -4,7 +4,7 @@ from rest_framework.relations import SlugRelatedField
 from sections.models import Section, Content
 
 
-class SectionSerializer(ModelSerializer):
+class ContentSerializer(ModelSerializer):
     class Meta:
         model = Content
         fields = '__all__'
