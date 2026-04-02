@@ -1,0 +1,209 @@
+[
+    {
+        "model": "sections.content",
+        "pk": 1,
+        "fields": {
+            "section": 1,
+            "title": "Муха",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 2,
+        "fields": {
+            "section": 1,
+            "title": "Жук-носорог",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 3,
+        "fields": {
+            "section": 1,
+            "title": "Майский жук",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 4,
+        "fields": {
+            "section": 1,
+            "title": "Жук-олень",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 5,
+        "fields": {
+            "section": 1,
+            "title": "Стрекоза",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 6,
+        "fields": {
+            "section": 1,
+            "title": "Шмель",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 7,
+        "fields": {
+            "section": 2,
+            "title": "Ойлин",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 8,
+        "fields": {
+            "section": 2,
+            "title": "Обыкновенная сипуха",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 9,
+        "fields": {
+            "section": 2,
+            "title": "Беркут",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 10,
+        "fields": {
+            "section": 2,
+            "title": "Степной орёл",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 11,
+        "fields": {
+            "section": 2,
+            "title": "Какаду",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 12,
+        "fields": {
+            "section": 3,
+            "title": "Белая Акула",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 13,
+        "fields": {
+            "section": 3,
+            "title": "Манга",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 14,
+        "fields": {
+            "section": 3,
+            "title": "Щука",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 15,
+        "fields": {
+            "section": 3,
+            "title": "Обыкновенный сом",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 16,
+        "fields": {
+            "section": 3,
+            "title": "Атлантический голубой марлин",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 17,
+        "fields": {
+            "section": 4,
+            "title": "Императорский скорпион",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 18,
+        "fields": {
+            "section": 4,
+            "title": "Чёрная вдова",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 19,
+        "fields": {
+            "section": 5,
+            "title": "Обыкновенный шимпанзе",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 20,
+        "fields": {
+            "section": 5,
+            "title": "Синий кит",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 21,
+        "fields": {
+            "section": 5,
+            "title": "Кашалот",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 22,
+        "fields": {
+            "section": 5,
+            "title": "Сабанный слон",
+            "content": ""
+        }
+    },
+    {
+        "model": "sections.content",
+        "pk": 23,
+        "fields": {
+            "section": 5,
+            "title": "Человек разумный",
+            "content": ""
+        }
+    }
+]

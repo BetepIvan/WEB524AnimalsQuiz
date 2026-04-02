@@ -14,7 +14,7 @@ app_name = SectionsConfig.name
 router = DefaultRouter()
 
 section = 'section/'
-content = 'section/'
+content = 'content/'
 question = 'question/'
 create = 'create/'
 update = 'update/'

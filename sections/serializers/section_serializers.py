@@ -12,11 +12,11 @@ class SectionSerializer(ModelSerializer):
 
 
 class SectionListSerializer(ModelSerializer):
-    sections_content_title = SerializerMethodField()
+    section_content_title = SerializerMethodField()
 
-    def get_sections_content_title(self, section):
+    def get_section_content_title(self, section):
         return ContentSectionSerializer(Content.objects.filter(section=section), many=True).data
 
     class Meta:
         model = Section
-        fields = ('id', 'title', 'sections_content_title')
+        fields = ('id', 'title', 'section_content_title')

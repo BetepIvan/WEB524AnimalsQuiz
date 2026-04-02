@@ -10,7 +10,7 @@ from sections.paginators import SectionPagination, ContentPagination
 
 
 class SectionListAPIView(ListAPIView):
-    serializer_class = SectionSerializer
+    serializer_class = SectionListSerializer
     queryset = Section.objects.all()
     # permission_classes = (IsAuthenticated)
     pagination_class = SectionPagination
